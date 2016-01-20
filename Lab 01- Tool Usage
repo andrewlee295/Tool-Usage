@@ -1,0 +1,14 @@
+myfile = File.open("Rubyfile.txt");
+#Read each line of code in the file
+while line = myfile.gets
+  #if line has a character then print the word with space (word )
+
+    char = line.chr
+    #if line has a space then skip the line
+    if char != "\t"
+      words = line.split(" ")
+        #print on one line and separated by spaces
+      print words[0]
+      print " "
+    end
+end
